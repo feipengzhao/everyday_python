@@ -26,7 +26,13 @@
 on: [push]
 jobs:
   steps:
-  run: python -m flake8 --max-line-length=150 --max-complexity 5 *.py project/*.py project/*/routes.py
+    - name: initEcho
+      run: |
+        echo MyFirstJob
+    - name: start
+      run: |
+        python -m flake8 --max-line-length=150 --max-complexity 5 *.py
+
 # isort:
 #   stage: Static Analysis
 #   script:
