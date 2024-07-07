@@ -5,6 +5,6 @@ def my_print(owner=None):
     return _print
 
 
-personal_print = my_print(owner="My: ")
+personal_print = my_print(owner="Another: ")
 
 personal_print("hello", name="Jack")
